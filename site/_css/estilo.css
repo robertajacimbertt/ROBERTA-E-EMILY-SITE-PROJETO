@@ -1,0 +1,101 @@
+﻿@font-face{
+	font-family:'CaviarDreams';
+	src:url(../_fonts/CaviarDreams.ttf);
+}
+body{background-color: #4d4d4d;background-image:url("../_imagens/fundo.png")}
+#page-container { width: 960px; margin: auto; background: white; box-shadow: 5px 5px 5px #ffd687;}
+
+
+#logo { background: #dfdfdf; height: 150px; }
+img#imagem-logo{width:15%;position:auto;left:50%;top:10px;}	
+
+div#menu {background: #f48f3c; height: 48px;margin:0;color:white;}
+nav#menu_principal ul li {float: left;}
+nav#menu_principal ul li a{display:block;color: #666;text-align:center;padding: 14px 16px;text-decoration: none;color:white;border-right:#e9722b 1px solid;}
+nav#menu_principal ul li a:hover:not(.active) { background-color: #ffd687; color:black;}
+nav#menu_principal ul li a.active{color: white;background-color: #ffd687}
+nav#menu_principal ul{list-style-type: none;margin:0;padding: 0;overflow: hidden;border: 1px solid #f48f3c; background-color: #f48f3c;font-size:12pt;}
+nav#menu_principal{}
+
+#banner { background: white; height: 400px; }
+.banner{
+	width:960px;
+	height:400px;
+	margin:auto;
+	background-image:url(_imagens/banner1.jpg);
+	background-size:100% 100%;
+	animation: banner 10s infinite;
+	animation-direction:alternate;
+}
+
+@keyframes banner{
+	0%, 30%{
+		background-image: url(../_imagens/banner1.jpg);
+		opacity:1;
+	}
+	31%, 34% {
+		opacity:0.1;
+	}
+	35%,65%{
+		background-image:url(../_imagens/banner2.jpg);
+		opacity:1;
+	}
+	66%, 69%{
+		opacity:0.1;
+	}	
+	70%, 100%{
+		background-image: url(../_imagens/banner3.jpg);
+		opacity:1;
+	} 	
+}
+
+#meio {font-family:'CaviarDreams';}
+
+#esquerda {float:left;background-color:#dfdfdf; width:25%;height:600px;}
+
+#artigo-principal {float:left; background-color:#dfdfdf; width:50%;height:600px; }
+#artigo-principal header{text-align:center;}
+#artigo-principal article{text-align:justify;padding:0px 10px 0px 10px;font-size:18pt;}
+
+#direita {float:right;background-color:#dfdfdf;width:25%; height:600px;}
+#direita figure{text-align:center;}
+p#p1{text-align:center;}
+p#p2{text-align:justify;padding:0px 10px 0px 10px;}
+
+#footer {  clear:both; background: #f48f3c; height: 40px;text-align:center; font-size:10pt;}
+
+/*-------------------------------desenvolvimento---------------------------------*/
+#selecoes{width:960px;}
+#id-opcoes{width:800px;padding-left:80px;padding-top:40px;}
+#id-opcoes select{width:800px;}
+#id-opcoes p{font-family:'CaviarDreams';font-size:18pt;}
+#caixa{width:800px;padding-left:80px;}
+#caixa iframe{width:798px;border:1px gray solid;}
+
+/*----------------------------------sobre----------------------------------------*/
+
+#dog{width:100px; height:120px;z-index:10px;}
+
+#contato img{width:900px;margin-left:30px;}
+#contato{background-color:white;font-family:'CaviarDreams';}
+.legenda{color:red; font-size:18px;}
+
+#botao{font-family:'CaviarDreams';color:white; font-size:18px;background-color:black;position:relative;left:430px;}
+#smensagem{position:absolute; top:1270px;}
+textarea{margin-left:120px;}
+
+#selecoes img{width:90px;}
+
+#dog{width:100px; height:120px;z-index:10px;}
+
+#cachorro{width:100px; height:120px;z-index:10px; margin-left:556px;}
+
+#s1{border:#FF8247 solid 3px; width:400px;}
+
+#s2{border:#FF8247 solid 3px; width:400px; margin-left:556px;}
+
+#s3{border:#FF8247 solid 3px; width:400px;}
+
+#s4{border:#FF8247 solid 3px; width:400px; margin-left:556px;}
+
+#imgpata{margin-left:80px;font-family:'CaviarDreams';}
