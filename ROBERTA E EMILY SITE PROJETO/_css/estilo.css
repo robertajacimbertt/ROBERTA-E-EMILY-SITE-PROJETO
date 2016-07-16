@@ -9,13 +9,22 @@ body{background-color: #4d4d4d;background-image:url("../_imagens/fundo.png")}
 #logo { background: #dfdfdf; height: 150px; }
 img#imagem-logo{width:15%;position:auto;left:50%;top:10px;}	
 
-div#menu {background: #f48f3c; height: 48px;margin:0;color:white;}
-nav#menu_principal ul li {float: left;}
-nav#menu_principal ul li a{display:block;color: #666;text-align:center;padding: 14px 16px;text-decoration: none;color:white;border-right:#e9722b 1px solid;}
-nav#menu_principal ul li a:hover:not(.active) { background-color: #ffd687; color:black;}
-nav#menu_principal ul li a.active{color: white;background-color: #ffd687}
-nav#menu_principal ul{list-style-type: none;margin:0;padding: 0;overflow: hidden;border: 1px solid #f48f3c; background-color: #f48f3c;font-size:12pt;}
-nav#menu_principal{}
+/*-------------------------------menu---------------------------------*/
+
+#menu_principal {background: #f48f3c; height: 48px;margin:0;color:white;}
+#menu_principal ul li {float: left;}
+#menu_principal ul li a{display:block;text-align:center;padding: 14px 16px;text-decoration: none;color:white;border-right:#e9722b 1px solid;}
+#menu_principal ul li a:hover:not(.active) {color:black;}
+#menu_principal ul li a.active{color: white;background-color: #ffd687}
+#menu_principal ul{list-style-type: none;margin:0;padding: 0;overflow: hidden;font-size:12pt;}
+#menu_principal li ul{display:none;z-index: 1;}
+#menu_principal ul li a:hover{background:#066;color:#fff;}
+#menu_principal li:hover ul{display:block;position:relative;}
+#menu_principal li:hover li{float:none;font-size:12px;}
+#menu_principal li:hover a{background:#333;color:#fff;}
+#menu_principal li:hover li a:hover{background:#ffd687;}
+
+/*-------------------------------banner---------------------------------*/
 
 #banner { background: white; height: 400px; }
 .banner{
@@ -48,6 +57,8 @@ nav#menu_principal{}
 		opacity:1;
 	} 	
 }
+
+/*-------------------------------artigos do index---------------------------------*/
 
 #meio {font-family:'CaviarDreams';}
 
@@ -99,3 +110,57 @@ textarea{margin-left:120px;}
 #s4{border:#FF8247 solid 3px; width:400px; margin-left:556px;}
 
 #imgpata{margin-left:80px;font-family:'CaviarDreams';}
+
+/*----------------------------------cadastro----------------------------------------*/
+
+/*----------------------------------login----------------------------------------*/
+
+#login {width:100%; height:500px;font-size:18px;}
+#login fieldset{width:40%;height:250px;position:absolute;left:29%;top:50%;color:BLACK;box-shadow: 7px 7px 5px white; border:3px solid white;font-size:20px;}
+.texto{background-color:transparent;width:300px;height:28px;text-align:center;font-size:20px;border:2px solid white;outline-color:orange;}
+#login input:hover{color:black;}
+#login img {width:100%;height:100%;opacity:0.5;}
+.botaolog{height:40px;background-color:white;border:0 none;}
+.botaolog:hover{background-color:darkgrey;border:1px solid orange;}
+
+/*----------------------------------menu do desenvolvimento---------------------------------*/
+
+#menu ul{
+	width:300px;
+	height:auto;
+	background-color:#2f4f4f;
+	display:block;
+	margin:0;
+	padding:0;
+	width:306px;
+	float:left;
+}
+#menu li{
+	list-style:none;
+	display:block;
+	width:306px;
+	height:auto;
+	border-bottom:2px solid #fff;
+	color:#fffafa;
+	font-family:helvetica;
+	font-size:20px;
+	padding:20px;
+	text-align:center;
+}
+#menu li:hover {
+	background:#ffd687;
+	width:266px;
+}
+#menu li{
+	-webkit-transition:all .9s ease;
+	-moz-transition:all .9s ease;
+	-ms-transition:all .9s ease;
+	transition:all .9s ease;
+}
+h1{
+font-family:helvetica;
+color:#8fbc8f;
+}
+
+#minhaDiv{width:620px;height:325px;float:right;background-color:yellow;visibility:hidden;}
+#minhaDiv2{width:620px;height:325px;float:right;background-color:blue;visibility:hidden;}
