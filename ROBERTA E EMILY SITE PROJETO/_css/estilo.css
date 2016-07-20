@@ -64,7 +64,7 @@ img#imagem-logo{width:15%;position:auto;left:50%;top:10px;}
 
 #esquerda {float:left;background-color:#dfdfdf; width:25%;height:600px;}
 
-#artigo-principal {float:left; background-color:#dfdfdf; width:50%;height:600px; }
+#artigo-principal {font-family:'CaviarDreams';float:left; background-color:#dfdfdf; width:50%;height:600px; }
 #artigo-principal header{text-align:center;}
 #artigo-principal article{text-align:justify;padding:0px 10px 0px 10px;font-size:18pt;}
 
@@ -74,14 +74,6 @@ p#p1{text-align:center;}
 p#p2{text-align:justify;padding:0px 10px 0px 10px;}
 
 #footer {  clear:both; background: #f48f3c; height: 40px;text-align:center; font-size:10pt;}
-
-/*-------------------------------desenvolvimento---------------------------------*/
-#selecoes{width:960px;}
-#id-opcoes{width:800px;padding-left:80px;padding-top:40px;}
-#id-opcoes select{width:800px;}
-#id-opcoes p{font-family:'CaviarDreams';font-size:18pt;}
-#caixa{width:800px;padding-left:80px;}
-#caixa iframe{width:798px;border:1px gray solid;}
 
 /*----------------------------------sobre----------------------------------------*/
 
@@ -123,44 +115,12 @@ textarea{margin-left:120px;}
 .botaolog{height:40px;background-color:white;border:0 none;}
 .botaolog:hover{background-color:darkgrey;border:1px solid orange;}
 
-/*----------------------------------menu do desenvolvimento---------------------------------*/
-
-#menu ul{
-	width:300px;
-	height:auto;
-	background-color:#2f4f4f;
-	display:block;
-	margin:0;
-	padding:0;
-	width:306px;
-	float:left;
-}
-#menu li{
-	list-style:none;
-	display:block;
-	width:306px;
-	height:auto;
-	border-bottom:2px solid #fff;
-	color:#fffafa;
-	font-family:helvetica;
-	font-size:20px;
-	padding:20px;
-	text-align:center;
-}
-#menu li:hover {
-	background:#ffd687;
-	width:266px;
-}
-#menu li{
-	-webkit-transition:all .9s ease;
-	-moz-transition:all .9s ease;
-	-ms-transition:all .9s ease;
-	transition:all .9s ease;
-}
-h1{
-font-family:helvetica;
-color:#8fbc8f;
-}
-
-#minhaDiv{width:620px;height:325px;float:right;background-color:yellow;visibility:hidden;}
-#minhaDiv2{width:620px;height:325px;float:right;background-color:blue;visibility:hidden;}
+/*----------------------------------desenvolvimento---------------------------------*/
+ul.tab {list-style-type: none;margin: 0;padding: 0;overflow: hidden; border: 1px solid #ccc; background-color: #f1f1f1;}
+ul.tab li {float: left;}
+ul.tab li a {display: inline-block;color: black;text-align: center;padding: 14px 16px;text-decoration: none;transition: 0.3s;font-size: 17px;}
+ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:focus, .active {background-color: #ccc;}
+.tabcontent {display: none;padding: 6px 12px;border-top: none;}
+#lista-desenvolvimento{width:100%;height:500px;font-family:'CaviarDreams';}
+#titulo{font-size:24px;}

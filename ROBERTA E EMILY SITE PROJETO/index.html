@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<link href="_css/estilo.css" rel="stylesheet" type="text/css" />
-<meta charset="UTF-8" >
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-
-<title>Gerenciador de ONGs</title>
+	<link href="_css/estilo.css" rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8" >
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<title>Gerenciador de ONGs</title>
 </head>
 <!--HEAD-->
 
@@ -14,7 +16,7 @@
 <body >
 <!--SCRIPT-->
 <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
+    
     <script>
         jssor_1_slider_init = function() {
             
@@ -135,11 +137,11 @@
 						<li><a href="desenvolvimento.html">Desenvolvimento</a>
 						
 							<ul>
-								<li><a href="#">Introdu&ccedil&atildeo</a></li>
-								<li><a href="#">Surgimento da Ideia </a></li>
-								<li><a href="#">Metodologia</a></li>
-								<li><a href="#">Bibliografia</a></li>
-								<li><a href="#">Anexos</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Bibliografia')">Bibliografia</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Codigo')">C&oacutedigo</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Cronograma')">Cronograma </a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Introducao')">Introdu&ccedil&atildeo</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Justificativa')">Justificativa </a></li>
 							</ul>
 						
 						</li>
@@ -199,10 +201,10 @@
 	<div id="meio">
 	
 			<aside id="esquerda"><table id="calendario" border="0" bgcolor="#8B8989">
-					<tr bgcolor="#70DBDB"><th colspan="7">Calendario</th></tr>
+					<tr bgcolor="#70DBDB"><th colspan="7">Di&aacuterio de bordo</th></tr>
 					<tr bgcolor="#70DBDB"><th colspan="4">ABRIL</th><th colspan="3">2016</th></tr>
 					<tr bgcolor="#48D1CC"><th>D</th><th>S</th><th>T</th><th>Q</th><th>Q</th><th>S</th><th>S</th></tr>
-					<tr bgcolor="#B0E2FF"><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td><!--<a href="www.google.com.br">1 </a></td><td> 2</td></tr>-->
+					<tr bgcolor="#B0E2FF"><td>  </td><td>  </td><td>  </td><td>  </td><td>  </td><td>1</td><td>2</td></tr>
 					<tr bgcolor="#A4D3EE"><td> 3</td><td> 4</td><td> 5</td><td> 6</td><td> 7</td><td> 8</td><td> 9</td></tr>
 					<tr bgcolor="#B0E2FF"><td> 10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
 					<tr bgcolor="#A4D3EE"><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr>

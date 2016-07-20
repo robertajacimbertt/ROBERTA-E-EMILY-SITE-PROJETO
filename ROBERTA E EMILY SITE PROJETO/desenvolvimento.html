@@ -130,11 +130,11 @@
 						<li><a href="desenvolvimento.html">Desenvolvimento</a>
 						
 							<ul>
-								<li><a href="#">Introdu&ccedil&atildeo</a></li>
-								<li><a href="#">Surgimento da Ideia </a></li>
-								<li><a href="#">Metodologia</a></li>
-								<li><a href="#">Bibliografia</a></li>
-								<li><a href="#">Anexos</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Bibliografia')">Bibliografia</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Codigo')">C&oacutedigo</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Cronograma')">Cronograma </a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Introducao')">Introdu&ccedil&atildeo</a></li>
+								<li><a href="#" class="tablinks" onclick="openDes(event, 'Justificativa')">Justificativa </a></li>
 							</ul>
 						
 						</li>
@@ -191,25 +191,54 @@
 
     <!-- FIM SLIDER -->
 		
-	<div id="menu">
-		<ul>
-			<li><a onclick="minhaFuncao('minhaDiv')">Conclus&atildeo </a></li>
-			<li><a onclick="minhaFuncao('minhaDiv2')">Cronograma</a></li>
-			<li>Introdu&ccedil&atildeo</li>
-			<li>Metodologia</li>
-			<li>Resumo</li>
+	<div id="lista-desenvolvimento">
+		<br/><p id="titulo">Conheça mais detalhes sobre nosso projeto! Selecione uma opção abaixo:</p><br/>
+		<ul class="tab">
+			<li><a href="#" class="tablinks" onclick="openDes(event, 'Bibliografia')">Bibliografia</a></li>
+			<li><a href="#" class="tablinks" onclick="openDes(event, 'Codigo')">C&oacutedigo</a></li>
+			<li><a href="#" class="tablinks" onclick="openDes(event, 'Cronograma')">Cronograma</a></li>
+			<li><a href="#" class="tablinks" onclick="openDes(event, 'Introducao')">Introdu&ccedil&atildeo</a></li>
+			<li><a href="#" class="tablinks" onclick="openDes(event, 'Justificativa')">Justificativa</a></li>
 		</ul>
-		<div id="minhaDiv">
+
+		<div id="Bibliografia" class="tabcontent">
+		  <p>London is the capital city of England.</p>
 		</div>
-		<div id="minhaDiv2">
+
+		<div id="Codigo" class="tabcontent">
+		  <p>Paris is the capital of France.</p>
 		</div>
+
+		<div id="Cronograma" class="tabcontent">
+		  <p>Tokyo is the capital of Japan.</p>
+		</div>
+
+		<div id="Introducao" class="tabcontent">
+		  <p>Brasilia is the capital of Brasil.</p>
+		</div>
+		
+		<div id="Justificativa" class="tabcontent">
+		  <p>Brasilia is the capital of Brasil.</p>
+		</div>
+
+
 	</div>
-	
-	<script>
-	function minhaFuncao(el) {
-		var visibility = document.getElementById(el).style.visibility='visible';
-		}
-	</script>
+<script>
+function openDes(evt, desName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(desName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+</script>
 	
 	<div id="footer">
 		<p>Copyright&copy 2016 - Curso T&eacutecnico de Inform&aacutetica, Centro Profissional Dom Bosco<br><a href="https://pt-br.facebook.com/" target="_blank">Facebook| </a><a href="https://twitter.com/?lang=pt" terget="_blank">Twitter</a></p>
